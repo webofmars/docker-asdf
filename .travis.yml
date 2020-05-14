@@ -1,14 +1,19 @@
-sudo: required
+dist: bionic
 
 env:
-  - IMAGE_NAME="webofmars/webofmars"
+  - IMAGE_NAME="webofmars/asdf"
+
+addons:
+  apt:
+    packages:
+      - docker.io
 
 services:
   - docker
 
 before_script:
   - sudo apt-get install -y git
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
   - bash generator.sh
