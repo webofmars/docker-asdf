@@ -3,10 +3,11 @@ dist: bionic
 env:
   - IMAGE_NAME="webofmars/asdf"
 
-addons:
-  apt:
-    packages:
-      - docker.io
+# Don't mess with docker :-)
+# addons:
+#   apt:
+#     packages:
+#       - docker.io
 
 services:
   - docker
