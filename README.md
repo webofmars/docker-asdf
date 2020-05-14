@@ -1,13 +1,17 @@
 # webofmars/asdf
 
-Simple image based on [https://github.com/asdf-vm/asdf]
+[![Build Status](https://travis-ci.org/webofmars/docker-asdf.svg?branch=master)](https://travis-ci.org/webofmars/docker-asdf)
+
+Simple image based on [https://github.com/asdf-vm/asdf]()
 Allow to install and use a set of tools by setting up a `.tool-versions` in your folders hierarchy.
 
-More infos at [https://asdf-vm.com]
+* More infos at [https://asdf-vm.com]()
+* Gihtub repo: https://github.com/webofmars/docker-asdf
+
 
 ## available tags
 
-See here: [https://github.com/asdf-vm/asdf/releases]
+See here: [https://github.com/asdf-vm/asdf/releases]()
 
 Tags are the same of the versions published in this repo (v0.7.8 as time of writting)
 
