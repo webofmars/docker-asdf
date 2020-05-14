@@ -8,29 +8,28 @@ Allow to install and use a set of tools by setting up a `.tool-versions` in your
 * More infos at [https://asdf-vm.com]()
 * Gihtub repo: https://github.com/webofmars/docker-asdf
 
+## Available tags
 
-## available tags
-
-See here: [https://github.com/asdf-vm/asdf/releases]()
+See here: [https://github.com/webofmars/docker-asdf/blob/master/versions.txt]()
 
 Tags are the same of the versions published in this repo (v0.7.8 as time of writting)
 
-## usage
+## Usage
 
-### as a working tool on your desktop
+### As a working tool on your desktop
 
-Ex with kubectl:
-    - `docker run --rm -it -v $HOME/.kube/config:/home/asdf/.kube/config -it webofmars/asdf`
-    - `asdf install kubectl 1.17.5`
-    - `asdf local kubectl 1.17.5`
-    - `kubectl version --short`
+Exemple with kubectl:
 
-### in your ci/cd builds
+* `docker run --rm -it -v $HOME/.kube/config:/home/asdf/.kube/config -it webofmars/asdf`
+* `asdf install kubectl 1.17.5`
+* `asdf local kubectl 1.17.5`
+* `kubectl version --short`
 
-Ex with `.gitlab-ci.yml`:
-    - TBD
+### In your ci/cd builds
 
-### in you own Dockerfiles
+Ex with `.gitlab-ci.yml`: TO BE DONE
+
+### In you own Dockerfiles
 
 Ex install Node.js:
 

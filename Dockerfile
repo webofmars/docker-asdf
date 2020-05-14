@@ -22,9 +22,9 @@ ENV LANG=C.UTF-8 PATH=/home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 WORKDIR /home/asdf
 
 # install plugins and versions
-RUN asdf plugin add kubectl  && \
-    asdf plugin add helm     && \
-    asdf plugin add skaffold && \
-    asdf plugin add velero
+RUN asdf plugin-add kubectl  && \
+    asdf plugin-add helm     && \
+    asdf plugin-add skaffold && \
+    asdf plugin-add velero
 
 ENTRYPOINT ["/bin/bash"]
