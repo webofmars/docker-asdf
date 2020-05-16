@@ -16,7 +16,7 @@ RUN curl -fL -Ss -o /tmp/asdf.tar.gz https://github.com/asdf-vm/asdf/archive/${A
     tar -zxvf /tmp/asdf.tar.gz -C $HOME/.asdf --strip-components=1 && \
     rm /tmp/asdf.tar.gz
 
-COPY .tool-versions /home/asdf/.tool-versions
+COPY --chown=asdf:asdf .tool-versions /home/asdf/.tool-versions
 
 ENV LANG=C.UTF-8 PATH=/home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 WORKDIR /home/asdf
