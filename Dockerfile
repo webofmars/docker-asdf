@@ -27,4 +27,4 @@ RUN asdf plugin-add kubectl  && \
     asdf plugin-add skaffold && \
     asdf plugin-add velero
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-c"]
